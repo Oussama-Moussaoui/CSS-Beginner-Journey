@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons And Links Styling</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn {
+            background-color: #0099ff;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 15px 10px;
+            font-size: 16px;
+            height: 60px;
+            width: 60px;
+            cursor: pointer;
+        }
+
+        .btn:hover, a:hover {
+            background-color: #13547c;
+        }
+
+        .btn:active, a:active {
+            color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="btn">Click Here</a>
+    <button class="btn">Click</button>
+    <button class="btn"><a href="#">Click Here</a></button>
+</body>
+</html>
