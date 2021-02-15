@@ -16,6 +16,7 @@ img {
     list-style: none;
     background-color: #4a6ca0;
     font-size: 1.4rem;
+    text-align: center;
     /* overflow: auto; */
     position: sticky; top: 0px;
 }
@@ -31,8 +32,8 @@ img {
     text-transform: uppercase;
     color: white;
     padding: 0px 30px;
-    border-right: 1px #e4e4e4 solid;
 }
+
 
 .menu__item a:hover {
     background-color: #32568b;
