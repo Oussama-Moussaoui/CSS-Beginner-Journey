@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    padding: 20px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.box {
+    display: inline-block;
+    /* display: inline; */   /*You apply width & margin on
+    inline elements, that's why you need inline-block*/
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 32%;
+}
