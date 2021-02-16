@@ -19,7 +19,7 @@ img {
 
 .box {
     display: inline-block;
-    /* display: inline; */   /*You can't apply width & margin on
+    /* "display: inline;" You can't apply width & margin on
     inline elements, that's why you need inline-block*/
     background-color: #f4f4f4;
     padding: 20px;
