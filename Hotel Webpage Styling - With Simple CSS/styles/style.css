@@ -23,7 +23,15 @@ p {
     margin: 10px 0;
 }
 
-/* Nav bar*/
+/* Utility Classes */
+.container {
+    max-width: 1120px;
+    margin: auto;
+    overflow: auto;
+    padding: 0px 20px;
+}
+
+/* Navbar */
 #navbar {
     background-color: #333;
     color: #fff;
@@ -36,7 +44,7 @@ p {
 
 #navbar h1 {
     float: left;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 #navbar ul {
