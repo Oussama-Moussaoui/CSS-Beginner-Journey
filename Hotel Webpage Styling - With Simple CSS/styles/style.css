@@ -59,6 +59,21 @@ p {
     color: #333;
 }
 
+.bg-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.bg-light {
+    background-color: #fff;
+    color: #333;
+}
+
+.bg-primary {
+    background-color: #E3B665;
+    color: #333;
+}
+
 /* Navbar */
 #navbar {
     background-color: #333;
@@ -120,4 +135,28 @@ p {
     line-height: 1.7em;
 }
 
-/* Home info */
+/* Home Info */
+#home-info {
+    height: 400px;
+}
+
+#home-info .info__img {
+    background: url('../images/pexels-pixabay-161758.jpg') no-repeat
+    center center/cover;
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+#home-info .info__content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+#home-info .info__content p {
+    padding-bottom: 20px;
+}
