@@ -7,7 +7,8 @@
 
 /* Main Styling */
 html, body {
-    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.7em;
 }
 
@@ -70,7 +71,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #E3B665;
+    background-color: #ffc965;
     color: #333;
 }
 
@@ -160,3 +161,16 @@ p {
 #home-info .info__content p {
     padding-bottom: 20px;
 }
+
+/* Feature Section */
+.feature-box  {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+
+#features .fas {
+    padding-bottom: 20px;
+}
+
