@@ -187,6 +187,8 @@ p {
 #about-info {
     height: 400px;
     overflow: hidden;
+    border-bottom: 2px solid #E3B665;
+    /* border-top: 2px solid #E3B665; */
 }
 
 #about-info .info-right {
@@ -202,6 +204,8 @@ p {
     min-height: 100%;
     padding: 30px 20px;
     background-color: #222;
+    border-right: 2px solid #E3B665;
+    /* border-bottom: 2px solid #E3B665; */
 }
 
 /* Testimonials */
