@@ -80,6 +80,10 @@ p {
     line-height: 1.2em;
 }
 
+.clr {
+    clear: both;
+}
+
 /* Paddings */
 .py-1 { padding: 10px 0; }
 .py-2 { padding: 20px 0; }
@@ -197,13 +201,41 @@ p {
     width: 50%;
     min-height: 100%;
     padding: 30px 20px;
+    background-color: #222;
 }
 
+/* Testimonials */
+#testimonials {
+    padding: 80px;
+    height: 600px;
+    background: url('../images/pexels-thorsten-technoman-338504-\ copy.jpg') no-repeat
+    center center/cover;
+}
+
+#testimonials h2 {
+    font-size: 40px;
+    color: #fff;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+#testimonials .testimonial {
+    padding: 30px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+#testimonials .testimonial img {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
 /* Main Footer */
 #main-footer {
     background-color: #444;
     color: #fff;
     text-align: center;
     padding: 20px;
-    clear: both;
 }
