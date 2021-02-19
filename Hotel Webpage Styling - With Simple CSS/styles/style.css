@@ -196,6 +196,14 @@ p {
     float: right;
     width: 50%;
     min-height: 100%;
+    text-align: center;
+}
+
+#about-info .info-right h2 {
+    display: block;
+    margin-top: 180px;
+    font-size: 40px;
+    color: #fff;
 }
 
 #about-info .info-left {
