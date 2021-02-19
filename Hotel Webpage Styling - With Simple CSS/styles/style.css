@@ -66,6 +66,11 @@ p {
     color: #fff;
 }
 
+.bg-darkest {
+    background-color: #111;
+    color: #fff;
+}
+
 .bg-light {
     background-color: #fff;
     color: #333;
@@ -74,6 +79,17 @@ p {
 .bg-primary {
     background-color: #ffc965;
     color: #333;
+}
+
+.box  {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+
+.fas {
+    padding-bottom: 20px;
 }
 
 .large-heading {
@@ -169,18 +185,6 @@ p {
 }
 
 #home-info .info__content p {
-    padding-bottom: 20px;
-}
-
-/* Feature Section */
-.feature-box  {
-    float: left;
-    width: 33.3%;
-    padding: 50px;
-    text-align: center;
-}
-
-#features .fas {
     padding-bottom: 20px;
 }
 
@@ -280,6 +284,10 @@ p {
 #contact-form button {
     display: block;
     margin: auto;
+}
+
+#contact-form button:focus {
+    outline: none;
 }
 
 /* Main Footer */
