@@ -1,0 +1,26 @@
+/*The font size of the html (1 rem) is 16px by default */
+html {
+    font-size: 10px; /* many people do this because it's easier to calculate 1.6rem when 1 rem is equal to 10px insted of 16px*/
+    /* 62.5% = 10px */
+}
+
+/* Playing with EMs */
+#box-1 {
+    font-size: 20px;
+}
+
+#box-1 p {
+    font-size: 1.5em;
+    padding: 1em; /* it takes 30px not 20px */ /* So consider using rem unit over em*/
+}
+
+#box-1 ul {
+    font-size: 1.2em; /* Another reason why to use rem over em */
+}
+
+
+/* Playing with REMs */
+#box-2 h3 {
+    font-size: 2rem;
+    line-height: 1.7rem;
+}
