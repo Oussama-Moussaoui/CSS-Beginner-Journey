@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+                                                                /* left/right  top/bottom*/
+    background: #222 url('https://source.unsplash.com/daily') no-repeat center 20%/cover;
+    color: #fff;
+
+    /* height: 100%; */  /* This will not highlight the whole page, because the body height is the content height*/
+
+    height: 100vh; /* vh makes creating landing pages very easy, because you probably want the img behind the cta to take the height of the viewport (the window) */
+
+    text-align: center;
+    padding: 2rem;
+    padding-top: 15rem;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    margin: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #f4f4f4;
+    color: #333;
+    padding: 0.75rem 2rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+@media (max-height: 430px) {
+    header {
+        padding-top: 5rem;
+    }
+}
+
+@media (max-height: 200px) {
+    header {
+        padding-top: 0.5rem;
+    }
+}
