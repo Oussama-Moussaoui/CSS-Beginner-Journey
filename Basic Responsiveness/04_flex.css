@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;  /* row is default when display is flex */
+    flex-wrap: wrap; /* if more than 12 items */
+    flex-flow: row wrap; /* A shortcut for 'flex-direction' and 'flex-wrap' */
+}
+
+.item {
+    background: #f4f4f4;
+    border: #ccc solid 1px;
+    padding: 1rem;
+    text-align: center;
+    margin: 0.75rem;
+    flex: 1; /* this make them all equal */
+}
+
+/* .item:first-child {
+    flex: 2;
+} */
