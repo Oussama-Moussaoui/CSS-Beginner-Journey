@@ -1,0 +1,59 @@
+#container {
+    background: #555;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* ALIGNING ITEMS HORIZONTAL (justify) */
+
+    /* justify-content: flex-start; */ /* same as float:left - it's the Default*/
+    /* justify-content: flex-end; */ /* same as float:right */
+    /* justify-content: center;
+    justify-content: space-around; */
+    /* justify-content: space-between; */ /* like around, but margin is not added to the edges*/
+    justify-content: space-evenly;
+
+    /*
+        OPTIONS:
+        flex-start
+        flex-end
+        center
+        space-around
+        space-between
+        space-evenly
+    */
+
+    /* ALIGN ITEMS VERTICAL (there must be a height) */
+    height: 600px;
+    /* align-items: stretch; */ /* default */
+    /* align-items: flex-end; */ /* flex-start (top) */
+    /* align-items: center; */
+    align-items: baseline;
+
+
+    /* ALIGN ITEMS VERTICAL WHEN THERE IS EXTRA SPACE */
+    /* align-content: space-between; */
+}
+
+.item-1 {
+    /* flex order */
+    order: 3;
+}
+
+.item-2 {
+    /* Align single item vertical */
+    align-self: center;
+    order: 1;
+}
+
+.item-3 {
+    order: 2;
+}
+
+.item {
+    background: #f4f4f4;
+    border: #ccc solid 1px;
+    padding: 1rem;
+    text-align: center;
+    margin: 0.5rem;
+    flex-basis: 200px; /* like width: 200px; */ /* may be more important */
+}
