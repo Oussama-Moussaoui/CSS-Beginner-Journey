@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+}
+
+.box {
+    padding: 1rem;
+    margin: 1rem;
+    background: coral;
+    color: #fff;
+
+    /* They can be negative */
+    /* offset-x | offset-y | (blur-radius) | (spread-radius) | color */
+    box-shadow: 4px 4px 10px 1px rgba(255, 0, 0, 0.5);
+}
