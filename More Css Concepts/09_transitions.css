@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    background: #444;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.box {
+    background: #f4f4f4;
+    height: 100px;
+    width: 100px;
+
+    /* Transition */
+    transition-property: all; /* all: All properties | background: on the background | height, width, ... */
+
+    transition-duration: 2s;
+
+    transition-timing-function: ease-in-out;
+    transition: 1s all ease;
+}
+
+.box:hover {
+    background: steelblue;
+    height: 150px; width: 150px;
+}
