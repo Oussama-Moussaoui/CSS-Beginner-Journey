@@ -1,0 +1,38 @@
+body {
+    background: #333;
+}
+.box {
+    position: relative;
+    background: #f4f4f4;
+    width: 200px;
+    height: 200px;
+
+    /* Animation */
+    /* animation-name: animate1;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards; */
+    /* animation-delay: 1s;
+    animation-direction: alternate-reverse; */
+    /* animation-timing-function: ease-in-out; */
+
+    animation: animate1 2s 2 forwards ease-in-out;
+    /*
+        ease-in: starts slow, ends fats.
+        ease-out: starts fast, ends slow.
+        ease-in-out: starts slow, fast in the middle, ends slow.
+    */
+}
+
+@keyframes animate1 {
+    from {
+        /* width: 200px; */
+        left: 0;
+    }
+
+    to {
+        height: 600px;
+        background: steelblue;
+        left: 200px;
+    }
+}
