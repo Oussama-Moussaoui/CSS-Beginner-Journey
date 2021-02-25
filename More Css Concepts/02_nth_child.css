@@ -1,0 +1,37 @@
+li {
+    padding: 0.25rem;
+    margin: 0.25rem;
+    list-style: none;
+}
+
+/* Nth Child Pseudo Selector */
+li:nth-child(3) {
+    background: purple;
+}
+
+/* Every 3 */
+li:nth-child(3n) {
+    background: rgb(187, 1, 187);
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+/* Every 3 after the 7th element */
+li:nth-child(3n + 7) {
+    background: orange;
+    font-size: 1.1rem;
+}
+
+/* Every Odd/Even */
+li:nth-child(odd) {
+    background: #bbb;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+li:nth-child(even) {
+    background: #ddd;
+    font-size: 1.1rem;
+    color: #000;
+}
+
