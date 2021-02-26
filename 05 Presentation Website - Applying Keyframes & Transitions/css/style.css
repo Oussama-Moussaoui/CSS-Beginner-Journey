@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --pg-1-clr: rgb(98, 185, 219);
+    --pg-2-clr: teal;
+    --pg-3-clr: steelblue;
+    --pg-4-clr: slateblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Styling */
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    color: #fff;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Utility Classes */
+.l-heading {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s all ease;
+}
+
+.btn:hover,
+.btn-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Page Main Stying */
+.page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0 4rem;
+}
+
+/* Page Colors */
+#page-1 {
+    background: var(--pg-1-clr);
+}
+
+#page-2 {
+    background: var(--pg-2-clr);
+}
+
+#page-3 {
+    background: var(--pg-3-clr);
+}
+
+#page-4 {
+    background: var(--pg-4-clr);
+}
