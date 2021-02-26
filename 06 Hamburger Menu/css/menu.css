@@ -1,3 +1,4 @@
+/* Menu Wrap*/
 .menu-wrap {
     position: fixed;
     top: 0;
@@ -5,6 +6,7 @@
     z-index: 1;
 }
 
+/* Toggler */
 .menu-wrap .toggler {
     position: absolute;
     top: 0;
@@ -16,6 +18,7 @@
     opacity: 0;
 }
 
+/* Hamburger */
 .menu-wrap .hamburger {
     position: absolute;
     top: 0;
@@ -23,7 +26,7 @@
     z-index: 1;
     width: 50px;
     height: 50px;
-    padding: 0.7rem;
+    /* padding: 0.7rem; */
     background: var(--primary-clr);
     display: flex;
     flex-direction: column;
@@ -31,7 +34,8 @@
     justify-content: center;
 }
 
-.hamburger span {
+/* Hamburger Bars */
+.hamburger .bar {
     position: relative;
     flex: none;
 
@@ -41,4 +45,19 @@
     width: 36px;
     border-radius: 2px;
     transition: 0.3s;
+}
+
+/* Toggler Animation */
+.toggler:checked + .hamburger .bar-1 {
+    top: 14px;
+    transform: rotate(135deg);
+}
+
+.toggler:checked + .hamburger .bar-2 {
+    transform: rotate(45deg);
+}
+
+.toggler:checked + .hamburger .bar-3 {
+    top: -14px;
+    transform: rotate(135deg);
 }
