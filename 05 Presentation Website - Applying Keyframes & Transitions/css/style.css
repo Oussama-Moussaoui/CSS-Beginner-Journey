@@ -1,5 +1,7 @@
+/*  Imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* Variables */
 :root {
     --pg-1-clr: rgb(98, 185, 219);
     --pg-2-clr: teal;
@@ -7,6 +9,7 @@
     --pg-4-clr: slateblue;
 }
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +17,10 @@
 }
 
 /* Main Styling */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     line-height: 1.4;
@@ -102,7 +109,7 @@ a {
 
 #page-1 .nav {
     transform: translateX(2000px);
-    animation: animateX 1s 2s forwards ease;
+    animation: animateX 1s 1.5s forwards ease;
 }
 
 /* Keyframes */
