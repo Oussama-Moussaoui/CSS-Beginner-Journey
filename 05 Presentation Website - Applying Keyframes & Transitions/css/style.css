@@ -88,3 +88,32 @@ a {
 #page-4 {
     background: var(--pg-4-clr);
 }
+
+/* Animations */
+#page-1 .l-heading {
+    transform: translateY(-2000px);
+    animation: animateY 1s forwards ease;
+}
+
+#page-1 .lead {
+    transform: translateX(-2000px);
+    animation: animateX 1s 1s forwards ease;
+}
+
+#page-1 .nav {
+    transform: translateX(2000px);
+    animation: animateX 1s 2s forwards ease;
+}
+
+/* Keyframes */
+@keyframes animateY {
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes animateX {
+    to {
+        transform: translateX(0px);
+    }
+}
