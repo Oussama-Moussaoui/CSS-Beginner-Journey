@@ -1,8 +1,8 @@
 /* Variables */
 :root {
     --primary-clr: rgba(13, 110, 139, 0.6);
-    --secondary-clr: rgba(229, 148, 0, 1);
     --secondary-clr: rgba(24, 39, 51, 0.85);
+    --hover-clr: rgba(229, 148, 0, 1);
 }
 
 /* Reset */
