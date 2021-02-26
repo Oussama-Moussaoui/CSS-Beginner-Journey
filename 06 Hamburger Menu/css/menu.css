@@ -1,0 +1,44 @@
+.menu-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    padding: 0.7rem;
+    background: var(--primary-clr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger span {
+    position: relative;
+    flex: none;
+
+    background: #fff;
+    margin: 4px 0;
+    height: 6px;
+    width: 36px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
