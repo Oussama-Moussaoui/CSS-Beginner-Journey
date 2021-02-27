@@ -1,0 +1,91 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    background: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/*
+    Navbar
+*/
+#navbar {
+    background: #ddd;
+}
+
+#navbar ul li {
+    color: #333;
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+#navbar ul li a {
+    color: #333;
+}
+
+/* Hide Nested lists by default */
+#navbar ul li ul {
+    display: none;
+}
+
+/* Hover State */
+#navbar ul li:hover {
+    background: coral;
+    color: #fff;
+}
+
+#navbar ul li:hover a {
+    color: #fff;
+}
+
+/* Showing Nested lists */
+#navbar ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 230px;
+    margin-top: 1rem;
+}
+
+#navbar ul li:hover ul li {
+    display: block;
+    background: #e7e7e7;
+}
+
+#navbar ul li:hover ul a {
+    color: #333;
+}
+
+#navbar ul li ul li:hover {
+    background: rgb(255, 127, 81);
+}
+
+#navbar ul li:hover ul li span {
+    float: right;
+    background: coral;
+    padding: 0 2px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+#navbar ul li:hover ul li:hover span {
+    background: #ff3535;
+    color: #fff;
+}
