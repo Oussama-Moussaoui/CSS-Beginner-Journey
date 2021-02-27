@@ -78,7 +78,7 @@ li {
     width: 400px;
     padding: 1rem;
     background-color: var(--secondary-clr);
-    transition: 0.5s all ease;
+    transition: 0.2s background ease;
 }
 
 /* Rightside Boxes */
@@ -101,6 +101,7 @@ li {
     height: 25px;
     width: 25px;
     background: var(--secondary-clr);
+    background: slateblue;
     transform: translateX(-50%);
     border-radius: 50%;
     transition: 0.5s all ease-in-out;
@@ -178,7 +179,7 @@ li {
 
 #timeline ul li:nth-child(even) div {
     transform: translateX(-1400px);
-    animation: animateX 1.3s forwards ease;
+    animation: animateX 1.4s forwards ease;
 }
 
 @keyframes animateX {
