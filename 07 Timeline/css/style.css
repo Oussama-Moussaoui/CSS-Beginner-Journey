@@ -37,6 +37,10 @@ li {
     margin-bottom: 1rem;
 }
 
+.special {
+    color: var(--special-clr);
+}
+
 /* Main Header */
 #main-header {
     background: var(--secondary-clr);
@@ -52,6 +56,7 @@ li {
     margin-top: 40px;
     padding: 50px 0;
 }
+
 #timeline ul li div h3 {
     color: var(--special-clr);
 }
@@ -151,7 +156,7 @@ li {
     }
 
     #timeline ul li div {
-        width: calc(100vw - 100px);/* width: 90vw; */
+        width: calc(100vw - 90px);/* width: 90vw; */
     }
 
     #timeline ul li:nth-child(even) div {
@@ -162,5 +167,22 @@ li {
         left: -12px;
         border-width: 8px 16px 8px 0;
         border-color: transparent var(--secondary-clr) transparent transparent;
+    }
+}
+
+/* Animation */
+#timeline ul li:nth-child(odd) div {
+    transform: translateX(1400px);
+    animation: animateX 0.7s forwards ease;
+}
+
+#timeline ul li:nth-child(even) div {
+    transform: translateX(-1400px);
+    animation: animateX 1.3s forwards ease;
+}
+
+@keyframes animateX {
+    to {
+        transform: translateX(0px);
     }
 }
