@@ -55,8 +55,8 @@ li {
 
 /* Creating the line */
 #timeline ul li {
-    /* list-style   : none; */
-    position: relative; /* Because we will position some of the stuff inside of it as absolute */
+    position: relative;
+    /* Because we will position some of the stuff inside of it as absolute */
     width: 6px;
     margin: 0 auto;
     padding-top: 50px;
@@ -71,4 +71,28 @@ li {
     padding: 1rem;
     background-color: var(--secondary-clr);
     transition: 0.5s all ease;
+}
+
+/* Rightside Boxes */
+#timeline ul li:nth-child(odd) div {
+    left: 40px;
+}
+
+/* Rightside Boxes */
+#timeline ul li:nth-child(even) div {
+    left: -434px; /* Math :) */
+}
+
+/* Dots */
+#timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    /* top: 50px; */
+    height: 25px;
+    width: 25px;
+    background: var(--secondary-clr);
+    transform: translateX(-50%);
+    border-radius: 50%;
 }
