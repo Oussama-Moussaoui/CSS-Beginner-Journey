@@ -176,12 +176,19 @@ li {
     /* Navbar*/
     #navbar ul li {
         display: block;
+        overflow: hidden;
     }
 
     #navbar ul li:hover ul {
         position: relative;
         width: 100vw;
         left: -1rem;
+        top: 1rem;
+    }
+
+    #navbar ul li:hover ul li span {
+        position: absolute;
+        right: 2rem;
     }
 
     /* Showcase */
