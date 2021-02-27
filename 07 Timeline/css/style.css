@@ -101,7 +101,6 @@ li {
     height: 25px;
     width: 25px;
     background: var(--secondary-clr);
-    background: slateblue;
     transform: translateX(-50%);
     border-radius: 50%;
     transition: 0.5s all ease-in-out;
