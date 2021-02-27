@@ -55,6 +55,7 @@ li {
 
 /* Creating the line */
 #timeline ul li {
+    /* list-style   : none; */
     position: relative; /* Because we will position some of the stuff inside of it as absolute */
     width: 6px;
     margin: 0 auto;
@@ -64,8 +65,10 @@ li {
 
 /* Boxes */
 #timeline ul li div {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 400px;
     padding: 1rem;
+    background-color: var(--secondary-clr);
+    transition: 0.5s all ease;
 }
