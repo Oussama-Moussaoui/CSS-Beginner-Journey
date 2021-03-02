@@ -136,3 +136,37 @@ p {
     background: #f4f4f4;
     color: #111;
 }
+
+/* Medium Screen View */
+@media (max-width: 900px) {
+    #timeline ul li div {
+        width: 250px;
+    }
+
+    #timeline ul li:nth-child(even) div {
+        left: -284px;
+    }
+}
+
+/* Small Screen View */
+@media (max-width: 600px) {
+    #timeline ul li {
+        margin-left: 1.5rem;
+    }
+
+    /* Getting left side boxes to be in the right side */
+    #timeline ul li:nth-child(even) div {
+        left: 40px;
+    }
+
+    #timeline ul li:nth-child(even) div::before {
+        left: -12px;
+        border-width: 0.5rem 1rem 0.5rem 0; /* tp rgt btm lft*/
+        border-color: transparent var(--snd-clr) transparent transparent;
+    }
+
+    /* Changing the width to all boxes*/
+    #timeline ul li div {
+        width: 80vw;
+    }
+}
