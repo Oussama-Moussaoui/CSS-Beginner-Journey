@@ -113,3 +113,31 @@ h1, h2, h3 {
 #page-4 {
     background: var(--pg-4-clr);
 }
+
+/* Animations */
+#page-1 .page-content .l-heading {
+    transform: translateY(-1200px);
+    animation: animate-Y 1s forwards ease;
+}
+
+#page-1 .page-content .lead {
+    transform: translateX(-1500px);
+    animation: animate-X 1s 0.7s forwards ease;
+}
+
+#page-1 .page-content .nav {
+    transform: translateX(1300px);
+    animation: animate-X 1s 1s forwards ease;
+}
+
+@keyframes animate-Y {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes animate-X {
+    to {
+        transform: translateX(0);
+    }
+}
