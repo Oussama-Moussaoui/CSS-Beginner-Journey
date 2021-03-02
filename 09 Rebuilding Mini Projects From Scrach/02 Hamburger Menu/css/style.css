@@ -75,7 +75,7 @@ ul, li {
 #showcase::before {
     content: '';
     z-index: -1;
-    background: url('../img/pexels-daria-shevtsova-1680140.jpg') no-repeat center center/ cover;
+    background: url('../img/pexels-daria-shevtsova-1680140.jpg') no-repeat center 20%/ cover;
     position: absolute;
     top: 0;
     left: 0;
