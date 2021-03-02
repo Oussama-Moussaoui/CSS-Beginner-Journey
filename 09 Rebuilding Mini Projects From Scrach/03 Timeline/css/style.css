@@ -57,7 +57,7 @@ p {
     Timeline Styling
 */
 #timeline ul {
-    margin-top: 90px;
+    margin: 70px 0;
 }
 
 #timeline ul li div h3 {
@@ -127,4 +127,12 @@ p {
     right: -12px;
     border-width: 0.5rem 0 0.5rem 1rem; /* tp rgt btm lft*/
     border-color: transparent transparent transparent var(--snd-clr);
+}
+
+/* Main Footer */
+#main-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #f4f4f4;
+    color: #111;
 }
