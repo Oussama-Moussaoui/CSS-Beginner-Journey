@@ -42,6 +42,7 @@
     width: 36px;
     border-radius: 2px;
     transition: 0.4s;
+    position: relative;
 }
 
 /* Menu */
@@ -78,4 +79,19 @@
     opacity: 0.8;
     transform: scale(1);
     border-radius: 0%;
+}
+
+/* Changing the hamburger */
+.toggler:checked + .hamburger .bar-1 {
+    top: 14px;
+    transform: rotate(135deg);
+}
+
+.toggler:checked + .hamburger .bar-2 {
+    transform: rotate(45deg);
+}
+
+.toggler:checked + .hamburger .bar-3 {
+    top: -14px;
+    transform: rotate(135deg);
 }
