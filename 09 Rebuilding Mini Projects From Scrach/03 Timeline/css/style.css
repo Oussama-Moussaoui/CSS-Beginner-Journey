@@ -43,6 +43,7 @@ p {
 .l-heading {
     font-size: 4rem;
     line-height: 1.2;
+    color: var(--special-clr);
 }
 
 /* Main Header */
@@ -103,6 +104,7 @@ p {
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
+    transition: 0.6s background ease;
 }
 
 /* Arrows */
@@ -135,6 +137,33 @@ p {
     padding: 1.5rem;
     background: #f4f4f4;
     color: #111;
+}
+
+/* Animations */
+#timeline ul li:nth-child(odd) div {
+    transform: translateX(1500px);
+    animation: animate-X 1s forwards ease;
+}
+
+#timeline ul li:nth-child(even) div {
+    transform: translateX(-1500px);
+    animation: animate-X 1s 0.6s forwards ease-out;
+}
+
+#timeline ul li::before {
+    animation: change-clr 1s ease;
+}
+
+@keyframes animate-X {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes change-clr {
+    to {
+        background: var(--special-clr);
+    }
 }
 
 /* Medium Screen View */
