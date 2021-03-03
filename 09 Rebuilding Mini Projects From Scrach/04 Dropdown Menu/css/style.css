@@ -59,7 +59,9 @@ ul, li {
     transform: scale(1.1);
 }
 
-/* Navbar */
+/*
+    Navbar Styling
+ */
 #navbar {
     background: #ddd;
 }
@@ -68,23 +70,74 @@ ul, li {
     display: flex;
 }
 
-#navbar ul li ul {
-    display: none;
-}
-
-#navbar ul li a,
-#navbar ul li:nth-child(3),
-#navbar ul li:nth-child(4) {
+#navbar > ul > li > a,
+#navbar > ul > li:nth-child(3),
+#navbar > ul > li:nth-child(4) {
     color: #333;
     display: inline-block;
     padding: 1rem 1.5rem;
     cursor: pointer;
 }
 
-#navbar ul li a:hover,
-#navbar ul li:nth-child(3):hover,
-#navbar ul li:nth-child(4):hover {
+#navbar > ul > li > a:hover,
+#navbar > ul > li:nth-child(3):hover,
+#navbar > ul > li:nth-child(4):hover {
     background: coral;
+    color: #fff;
+}
+
+/* Nested list Styling*/
+#navbar ul li {
+    position: relative;
+}
+
+#navbar ul li ul {
+    position: absolute;
+    z-index: 1;
+    top: 54px;
+    left: 0;
+    width: 250px;
+    display: none; /* Hiding */
+}
+
+/* List items inside the nested list */
+#navbar ul li ul li {
+    background: #e7e7e7;
+    width: 100%;
+    color: #333;
+    padding: 1.2rem 1rem;
+}
+
+#navbar ul li ul li:hover {
+    background: #999;
+}
+
+/* Nested list --> list items --> elements inside */
+#navbar ul li ul li a {
+    color: #333;
+}
+
+#navbar ul li ul li:hover i,
+#navbar ul li ul li:hover a {
+    color: #fff;
+}
+
+#navbar ul li ul li span {
+    float: right;
+    background: #ff7f50;
+    font-size: 0.9rem;
+    padding: 2px 3px;
+    border-radius: 5px;
+}
+
+#navbar ul li ul li:hover span {
+    background: #ff3535;
+    color: #fff;
+}
+
+/* Showing the nested list */
+#navbar ul li:hover ul {
+    display: block;
 }
 
 /* Showcase */
