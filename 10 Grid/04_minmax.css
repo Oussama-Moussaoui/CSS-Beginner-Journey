@@ -1,0 +1,14 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* *Better to use media-queries for regular layouts */
+}
+
+.item {
+    padding: 3rem;
+    border: #ccc solid 1px;
+    background: #f4f4f4;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
