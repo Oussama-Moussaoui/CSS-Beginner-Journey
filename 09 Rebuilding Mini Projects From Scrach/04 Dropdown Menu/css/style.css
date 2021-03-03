@@ -66,7 +66,7 @@ ul, li {
     background: #ddd;
 }
 
-#navbar ul {
+#navbar > ul {
     display: flex;
 }
 
@@ -87,7 +87,8 @@ ul, li {
 }
 
 /* Nested list Styling*/
-#navbar ul li {
+#navbar > ul > li:nth-child(3),
+#navbar > ul > li:nth-child(4) {
     position: relative;
 }
 
@@ -175,4 +176,21 @@ ul, li {
     border: none;
     margin-right: 0.6rem;
     outline: none;
+}
+
+/* Responsiveness */
+@media (max-width: 700px) {
+    #navbar > ul {
+        display: block;
+    }
+
+    #navbar > ul > li > a,
+    #navbar > ul > li:nth-child(3),
+    #navbar > ul > li:nth-child(4) {
+        display: block;
+    }
+
+    #navbar ul li ul {
+        width: 100%;
+    }
 }
