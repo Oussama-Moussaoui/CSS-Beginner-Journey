@@ -60,3 +60,31 @@ ul, li {
 }
 
 /* Navbar */
+
+/* Showcase */
+#showcase {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#showcase::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: url('../img/pexels-picjumbocom-196644.jpg') no-repeat center center/ cover;
+}
+
+#showcase .showcase-content {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
