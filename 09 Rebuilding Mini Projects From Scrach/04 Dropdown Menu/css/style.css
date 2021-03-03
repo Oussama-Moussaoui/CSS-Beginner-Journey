@@ -191,6 +191,9 @@ ul, li {
     }
 
     #navbar ul li ul {
-        width: 100%;
+        position: relative;
+        top: 1rem;
+        left: -1.5rem;
+        width: 100vw;
     }
 }
