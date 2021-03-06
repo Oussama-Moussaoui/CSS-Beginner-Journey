@@ -1,5 +1,11 @@
 @import 'variables';
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: $light-clr;
     color: $dark-clr;
@@ -7,6 +13,72 @@ body {
     line-height: 1.4;
 }
 
-h1 {
-    font-size: 6rem;
+/* Nesting */
+header {
+    background: $dark-clr;
+    color: $light-clr;
+    padding: 1rem;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.sec {
+    padding: 3rem;
+    color: $light-clr;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    &-a {
+        background: $primary-clr;
+    }
+
+    &-b {
+        background: $snd-clr;
+    }
+}
+
+/*
+a {
+    color: $dark-clr;
+    &:hover {
+        color: $light-clr;
+    }
+}
+*/
+
+%btn-shared {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.4s background ease;
+}
+
+/* Inheritance */
+.btn {
+    &-light {
+        @extend %btn-shared;
+        background: $light-clr;
+        color: $dark-clr;
+        &:hover {
+            background: $dark-clr;
+            color: $light-clr;
+        }
+    }
+    &-dark {
+        @extend %btn-shared;
+        background: $dark-clr;
+        color: $light-clr;
+        &:hover {
+            background: $light-clr;
+        color: $dark-clr;
+        }
+    }
 }
