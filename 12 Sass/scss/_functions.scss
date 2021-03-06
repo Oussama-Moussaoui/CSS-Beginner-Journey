@@ -1,0 +1,15 @@
+/* Setting txt_clr based on the background */
+@function set-txt-clr($bg-clr) {
+    @if (lightness($bg-clr) > 50) {
+        @return #111;
+    } @else {
+        @return #fff;
+    }
+}
+
+/* Mixin */
+@mixin transform($property) {
+    --webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
