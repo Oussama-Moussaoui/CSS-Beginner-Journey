@@ -1,9 +1,10 @@
-$backgroud: #f4f4f4;
-$color: #333;
+@import 'variables';
 
 body {
-    background: $backgroud;
-    color: $color;
+    background: $light-clr;
+    color: $dark-clr;
+    font-family: $font-stack;
+    line-height: 1.4;
 }
 
 h1 {
